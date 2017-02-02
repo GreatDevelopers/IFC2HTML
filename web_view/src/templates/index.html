@@ -1,0 +1,8 @@
+<p style="font-size:160%;text-align:center;">Upload IFC file to convert it into HTML for better view</p>
+<div class="row">
+         <form action="{% url 'show' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+			<input type="file" name="userfile">
+            <button type="submit" value="Submit">Submit</button>
+         </form>
+</div>
