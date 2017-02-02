@@ -14,5 +14,5 @@ for i in [fi.rstrip('\n') for fi in open(sys.argv[1])]:
     else:
         file.write('<div>'+i+'</div>'+'\n')
 
-file.write('<\ body>'+'\n'+'<\html>')
+file.write('</body>'+'\n'+'</html>')
 file.close()
